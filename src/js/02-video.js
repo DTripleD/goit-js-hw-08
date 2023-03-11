@@ -13,10 +13,6 @@ player.on('timeupdate', throttle(timeSaver, 1000));
 
 player.setCurrentTime(timeValueFromStorage);
 
-
-
-
-function timeSaver({ seconds }){
-    localStorage.setItem(STORAGE_TIME_KEY, seconds);
+function timeSaver({ seconds }) {
+  localStorage.setItem(STORAGE_TIME_KEY, seconds);
 }
-
